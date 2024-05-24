@@ -12,5 +12,10 @@
     "gatsby-plugin"
   ],
   "author": "Ferry Sikumbang",
+  "repository": "https://github.com/7sferry/gatsby-remark-link-on-headers.git",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "0BSD"
 }
