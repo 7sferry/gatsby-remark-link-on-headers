@@ -9,7 +9,10 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-plugin"
+    "gatsby-plugin",
+    "remark",
+    "gatsby-remark",
+    "headers"
   ],
   "author": "Ferry Sikumbang",
   "repository": "https://github.com/7sferry/gatsby-remark-link-on-headers.git",
