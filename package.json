@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-link-on-headers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A plugin to make heading has anchor-link",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,10 @@
     "headers"
   ],
   "author": "Ferry Sikumbang",
-  "repository": "https://github.com/7sferry/gatsby-remark-link-on-headers.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7sferry/gatsby-remark-link-on-headers.git"
+  },
   "private": false,
   "license": "0BSD"
 }

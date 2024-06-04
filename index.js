@@ -8,13 +8,12 @@ module.exports = async ({markdownAST}, pluginOptions) => {
 		let {depth} = node;
 		const headings = pluginOptions?.headings ?? [];
 
-		// Skip if not an h1
+		// Skip if not in headings options
 		if (headings.length > 0 && !headings.includes(`h${depth}`)) return;
 
-		// Grab the innerText of the heading node
 		let text = toString(node);
 
-		let slug = slugify(text);
+		let slug = slugify(text.replace(/<[^>]*>/g, ""));
 		const html = `
         <h${depth} class="heading-container" id="${slug}">
           <a class="heading-text" href="#${slug}">${text}</a>
