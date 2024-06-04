@@ -11,19 +11,19 @@ In gatsby-config, add this under `gatsby-transformer-remark`:
 
 ```js
 plugins: [{
-	//other plugins...
+  //other plugins...
 
-	resolve: `gatsby-transformer-remark`,
-	options: {
-		plugins: [
-			{
-				resolve: `gatsby-remark-link-on-headers`,
-				options: {
-					headings: [`h2`, `h3`],
-				},
-			},
-		]
-	}
+  resolve: `gatsby-transformer-remark`,
+  options: {
+    plugins: [
+      {
+        resolve: `gatsby-remark-link-on-headers`,
+        options: {
+          headings: [`h2`, `h3`],
+        },
+      },
+    ]
+  }
 }]
 ```
 
@@ -36,7 +36,7 @@ For all headings, leave it empty.
 
 ## Examples of usage
 
-The plugins will replace the headers with an anchor link based on headings options.
+No more actions required. The plugin will add an anchor link to headings tag automatically based on headings options after install this plugin.
 
 ## Changelogs
 
