@@ -13,7 +13,7 @@ module.exports = async ({markdownAST}, pluginOptions) => {
 
 		let text = toString(node);
 
-		let slug = slugify(text.replace(/<[^>]*>/g, " "));
+		let slug = slugify(text.replace(/<[^>]*>/g, ""));
 		const html = `
         <h${depth} class="heading-container" id="${slug}">
           <a class="heading-text" href="#${slug}">${text}</a>
